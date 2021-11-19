@@ -76,12 +76,12 @@
         android:id="@+id/btn0"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:onClick="ponerFicha"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toStartOf="@+id/btn1"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="ponerFicha" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn2"
@@ -107,13 +107,23 @@
 
     <TextView
         android:id="@+id/gameText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/win"
+        android:layout_marginBottom="112dp"
+        android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/btn1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        app:layout_constraintBottom_toTopOf="@+id/gameText"
+        app:layout_constraintEnd_toEndOf="@+id/gameText"
+        app:layout_constraintStart_toStartOf="@+id/gameText"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
